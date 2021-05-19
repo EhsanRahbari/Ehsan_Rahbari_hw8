@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw8 _ javaScript Num2</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<!-- <input type="text" id="urlinput"> -->
+    <textarea name="url" id="url" cols="50" rows="1">your url input: </textarea>
+    <label for="option">Choose the method : </label>
+    <select name="options" id="methods" onchange="displayChanger()">
+        <option value="POST">Post
+        </option>
+        <option value="GET">Get</option>
+        <!-- <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option> -->
+      </select>
+      <button onclick="reqhandler()">submit</button>
+      <br>
+      <div id="requestText">
+            <label for="reqtext">Enter your request: </label>
+            <br>
+            <textarea name="reqtext" id="reqtext" cols="50" rows="10"></textarea>
+    </div>
+    <div id="responseText">
+        <label for="responsetext">ResponseBody : </label>
+        <br>
+        <textarea name="responsetext" id="responsetext" cols="50" rows="10"></textarea>
+    </div>
+    <label for="status">Status Are: </label>
+    <br>
+    <textarea name="status" id="status" cols="70" rows="2"></textarea>
+</body>
+</html>
